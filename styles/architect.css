@@ -92,8 +92,11 @@ main > section{
 .banner-title{
     font-weight: 700;
     font-size: 4rem;
+    margin-bottom: 20px;
 }
-
+.banner-description{
+    margin-bottom: 32px;
+}
 .banner-image{
     width: 100%;
 }
@@ -113,9 +116,15 @@ main > section{
     margin-left: 130px;
     max-width: 530px;
 }
+.our-features .section-title{
+    margin-bottom: 24px;
+}
 
 #quick-list{
     font-weight: 500;
+}
+.feature-description{
+    margin-bottom: 32px;
 }
 
 /* feature will love section related styles */
@@ -144,7 +153,27 @@ main > section{
     margin-bottom: 0px;
 }
 
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.featured-architect img{
+    width: 100%;
+}
+
 /* some facts related styles */
+.some-facts .section-title{
+    margin-bottom: 24px;
+}
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -157,6 +186,7 @@ main > section{
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-left: 18px;
 }
 
 .fact-number{
@@ -174,15 +204,18 @@ main > section{
 
 .fact-description{
     max-width: 540px;
+    margin-bottom: 100px;
 }
 
 /* sponsor related styles */
+.our-sponsors .section-title{
+    margin-bottom: 25px;
+}
 .sponsor-info{
     max-width: 540px;
     margin: 50px auto;
     text-align: center;
 }
-
 .sponsor-companies{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -192,11 +225,26 @@ main > section{
     filter: grayscale(100%);
 }
 
+/* footer styles here */
+.footer{
+    max-width: 1440px;
+    background-color: #FFF4E7;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 216px;
+}
+.footer p{
+    padding: 38px 410px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
 /* responsive  media query */
 @media screen and (max-width:576px){
     .navbar, 
     .nav-links,
-    .teams{
+    .teams, .features, .footer{
         flex-direction: column;
     }
 
@@ -217,12 +265,25 @@ main > section{
     .our-features{
         margin-left: 20px;
     }
+
+    #experience-badge{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .footer{
+        justify-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer p{
+        padding: 10px 10px;
+    }
 }
 
 
 /* medium size device */
 @media screen and (min-width:576px) and (max-width:992px){
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
     .our-features{
@@ -232,5 +293,10 @@ main > section{
         grid-template-columns: repeat(2,1fr);
         gap: 50px;
         justify-items: center;
+    }
+
+    #experience-badge{
+        margin-left: 20px;
+        margin-top: 20px;
     }
 }
